@@ -59,7 +59,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         // resize
         let size = CGSize(width: 300, height: 300)
-        let scaledImage = image.af_imageScaled(to: size)
+        let scaledImage = image.af.imageScaled(to: size)
         
         imageView.image = scaledImage
         
