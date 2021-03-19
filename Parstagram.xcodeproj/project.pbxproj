@@ -60,6 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				BFE81F7826049E5C00C5D3AC /* Parstagram */,
+				BFE81FA92604C69E00C5D3AC /* Storyboards */,
+				BFE81FA72604C67D00C5D3AC /* View Controllers */,
+				BFE81FA82604C69500C5D3AC /* Cells */,
 				BFE81F7726049E5C00C5D3AC /* Products */,
 				E5AC1BD82E6E0EFE5B9C95FF /* Pods */,
 				48462EA9CE09CD45B0B3783C /* Frameworks */,
@@ -79,16 +82,37 @@
 			children = (
 				BFE81F7926049E5C00C5D3AC /* AppDelegate.swift */,
 				BFE81F7B26049E5C00C5D3AC /* SceneDelegate.swift */,
-				BFE81F7F26049E5C00C5D3AC /* Main.storyboard */,
 				BFE81F8226049E5D00C5D3AC /* Assets.xcassets */,
-				BFE81F8426049E5D00C5D3AC /* LaunchScreen.storyboard */,
 				BFE81F8726049E5D00C5D3AC /* Info.plist */,
+			);
+			path = Parstagram;
+			sourceTree = "<group>";
+		};
+		BFE81FA72604C67D00C5D3AC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				BFE81F942604A48A00C5D3AC /* LoginViewController.swift */,
 				BFE81F972604A49400C5D3AC /* FeedViewController.swift */,
 				BFE81F9A2604ACF800C5D3AC /* CameraViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BFE81FA82604C69500C5D3AC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
 				BFE81FA42604B63F00C5D3AC /* PostCell.swift */,
 			);
-			path = Parstagram;
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BFE81FA92604C69E00C5D3AC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BFE81F7F26049E5C00C5D3AC /* Main.storyboard */,
+				BFE81F8426049E5D00C5D3AC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		E5AC1BD82E6E0EFE5B9C95FF /* Pods */ = {
