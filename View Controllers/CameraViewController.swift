@@ -15,10 +15,9 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
+    // Post to Parse
     @IBAction func onSubmitButton(_ sender: Any) {
         let post = PFObject(className: "Posts")
         post["caption"] = commentField.text!
@@ -40,6 +39,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
     }
     
+    // Use Image Picker Controller when adding new posts
     @IBAction func onCameraButton(_ sender: Any) {
         let picker = UIImagePickerController()
         picker.delegate = self
@@ -65,15 +65,4 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         dismiss(animated: true, completion: nil)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

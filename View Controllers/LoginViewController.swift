@@ -14,9 +14,9 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
+    
+    // Sign in function
     @IBAction func onSignIn(_ sender: Any) {
         let username = usernameField.text!
         let password = passwordField.text!
@@ -31,6 +31,7 @@ class LoginViewController: UIViewController {
         
     }
     
+    // Sign up function
     @IBAction func onSignUp(_ sender: Any) {
         let user = PFUser()
         user.username = usernameField.text
